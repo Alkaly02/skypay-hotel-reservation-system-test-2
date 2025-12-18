@@ -13,6 +13,16 @@ import dev.lka.model.RoomType;
 import dev.lka.model.User;
 import dev.lka.util.CustomSimpleDateFormat;
 
+/**
+ * *********** DESIGN DECISION ***************
+ * 1. This is not a recommended approche for large systems because:
+ *      - The violation of Single Responsibility Principle
+ *      - It will be difficult to test the service
+ *      - It will be difficult to maintain and develop
+ *
+ * 2. (I don't know how to do it)
+ */
+
 public class Service {
     ArrayList<Room> rooms;
     ArrayList<User> users;
